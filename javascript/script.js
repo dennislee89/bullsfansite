@@ -44,6 +44,9 @@ $(document).ready(function(){
 
 
 var canvas = document.getElementById('butlerPtsChart');
+canvas.width= 580;
+canvas.height= 370; 
+
 var data = {
     labels: ["2011-12", "2012-13", "2013-14", "2014-15", "2015-16"],
     datasets: [
@@ -80,6 +83,9 @@ var myBarChart = Chart.Bar(canvas,{
             /*Assist Chart*/ 
 
 var canvas = document.getElementById('butlerAssChart');
+canvas.width= 580;
+canvas.height= 370; 
+
 var data = {
     labels: ["2011-12", "2012-13", "2013-14", "2014-15", "2015-16"],
     datasets: [
@@ -114,6 +120,9 @@ var myBarChart = Chart.Bar(canvas,{
  /*Assist Chart*/ 
 
 var canvas = document.getElementById('butlerRebChart');
+canvas.width= 580;
+canvas.height= 370; 
+
 var data = {
     labels: ["2011-12", "2012-13", "2013-14", "2014-15", "2015-16"],
     datasets: [
@@ -146,7 +155,7 @@ var myBarChart = Chart.Bar(canvas,{
 
 
 /* Radio */
-$('.pick input[type=radio]').on('click',function(){
+$('.radiopick input[type=radio]').on('click',function(){
     if($(this).val()=="1"){
       $('.showStat').removeClass('hidden');
       $('.showAssist').addClass('hidden');
